@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioActivity">
+
+
+    <EditText
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="12dp"
+        android:background="@color/material_dynamic_neutral95"
+        android:gravity="left"
+        android:hint="Digite seu nome:"
+        android:padding="2dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/second_frame"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="12dp"
+        android:background="@color/material_dynamic_neutral95"
+        android:gravity="left"
+        android:hint="Digite seu sobrenome:"
+        android:padding="2dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/main_frame"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/tree_frame"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="12dp"
+        android:background="@color/material_dynamic_neutral95"
+        android:gravity="left"
+        android:hint="Digite sua idade:"
+        android:padding="2dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/second_frame"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Salvar"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/tree_frame"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/scdbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Registrar"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
